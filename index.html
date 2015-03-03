@@ -1,0 +1,81 @@
+<html>
+  <head>
+    <title>
+      Intrinsic ratios / Material design keylines
+    </title>
+
+    <style>
+      // http://alistapart.com/d/creating-intrinsic-ratios-for-video/example2.html
+      // http://aeb.sr/intrinsic-ratio-generator/#2:3@100
+      
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        font-size: 100%;
+        line-height: 1;
+        max-width: 64em;
+        margin: 0 auto;
+      }
+
+      .wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+      }
+
+      .cell {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      #grid-16-9 {
+        padding-bottom: 56.25%;
+        border-bottom: 1px solid red;
+      }
+
+      #grid-3-2 {
+        padding-bottom: 66.667%;
+        border-bottom: 1px solid green;
+      }
+
+      #grid-4-3 {
+        padding-bottom: 75%;
+        border-bottom: 1px solid blue;
+      }
+
+      #grid-1-1 {
+        padding-bottom: 100%;
+        border-bottom: 1px solid;
+      }
+
+      #grid-3-4 {
+        padding-bottom: 133.334%;
+        border-bottom: 1px solid yellow;
+      }
+
+      #grid-2-3 {
+        padding-bottom: 150%;
+        border-bottom: 1px solid magenta;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="grid-16-9" class="wrapper"><div class="cell"></div></div>
+    <div id="grid-3-2" class="wrapper"><div class="cell"></div></div>
+    <div id="grid-4-3" class="wrapper"><div class="cell"></div></div>
+    <div id="grid-1-1" class="wrapper"><div class="cell"></div></div>
+    <div id="grid-3-4" class="wrapper"><div class="cell"></div></div>
+    <div id="grid-2-3" class="wrapper"><div class="cell"></div></div>
+  </body>
+</html>
